@@ -2,55 +2,81 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abhinav Anand | Product + AI Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhinav Anand | Product & AI</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script defer src="scripts/main.js"></script>
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1>Abhinav Anand</h1>
-    <p>Product & AI | Data Science | Problem Solver</p>
+    <p>Product Manager | AI & Data | IIT-BHU</p>
     <nav>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
+      <button id="toggle-theme">🌙</button>
     </nav>
   </header>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>I’m a Product + AI enthusiast with a focus on building data-driven products and insights. I’ve built ML models, CXO dashboards, and automated analytics pipelines.</p>
+    <p>I’m a data-driven Product Manager with a strong AI/analytics foundation. I bridge the gap between business strategy and machine learning to create impactful products.</p>
+    <a class="button" href="resume.pdf" download>Download Resume</a>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Churn Prediction Model:</strong> Reduced false positives by 15% using XGBoost.</li>
-      <li><strong>Customer Journey Dashboard:</strong> Funnel visualization + RCA in Power BI for strategic targeting.</li>
-    </ul>
-  </section>
-
-  <section id="experience">
+  <section id="experience" data-aos="fade-up">
     <h2>Experience</h2>
-    <p><strong>Analyst – TransOrg Analytics</strong><br>Built predictive models and RCA automation tools using Python, SQL, and Power BI.</p>
+    <div class="experience-card">
+      <h3>Analyst, TransOrg Analytics</h3>
+      <p>Jun 2024 – Present</p>
+      <ul>
+        <li>Built churn prediction models (Random Forest/XGBoost) improving retention targeting by 20%</li>
+        <li>Created 5+ Power BI dashboards for CXO-level insights</li>
+        <li>Automated feature pipelines reducing dev time from 7 to 4 days</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="skills">
+  <section id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <img src="assets/project1.png" alt="Churn Prediction" />
+        <h3>Churn Prediction Model</h3>
+        <p>Built an ML pipeline that reduced false positives by 15% and improved marketing ROI.</p>
+      </div>
+      <div class="card">
+        <img src="assets/project2.png" alt="Customer Journey Dashboard" />
+        <h3>Customer Journey Dashboard</h3>
+        <p>Strategic funnel analysis using Power BI with integrated RCA automation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" data-aos="fade-up">
     <h2>Skills</h2>
-    <p>Python, SQL, Power BI, ML Models, A/B Testing, Product Thinking, Git, JIRA</p>
+    <p>Python, SQL, Power BI, ML Models, A/B Testing, Product Thinking, Git, Agile</p>
   </section>
 
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
-    <p>Email: abhinav@example.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your Profile</a></p>
-    <p>GitHub: <a href="https://github.com/rant-it-on-git" target="_blank">rant-it-on-git</a></p>
+    <form action="https://formspree.io/f/yourformid" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <p>© 2025 Abhinav Anand</p>
+    <p>© 2025 Abhinav Anand | Built with 💙 and curiosity</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
 </body>
 </html>
